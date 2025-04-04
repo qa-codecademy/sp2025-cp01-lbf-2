@@ -1,0 +1,1 @@
+console.log("If you can read this, the initial.js file is being loaded correctly.");
