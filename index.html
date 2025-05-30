@@ -2,11 +2,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="initial.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
     <title>LBF-PROJECT</title>
 </head>
 <body>
-    <h1 class="placeholder">Project initialization, check the console the JavaScript should be hooked up and working!</h1>
-    <script src="initial.js"></script>
+    <div class="navbar">
+        <a href="/">
+            <img src="logo.png" alt="Logo" class="logo" />
+        </a>
+        <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+        
+        <nav class="nav-links" id="nav-links">
+            <div class="dropdown">
+                <a class="dropbtn" style="text-decoration: none;">
+                    Програми &#9662;
+                </a>
+                <div class="dropdown-content">
+                    <a href="/mini-entrepreneurs.html">Мини Стартапџии</a>
+                    <a href="/future-founders.html">Идни основачи</a>
+                    <a href="/little-creators.html">Мали креатори</a>
+                </div>
+            </div>
+            <a class="dropbtn"  href="/tutors.html">Предавачи</a>
+            <a class="dropbtn"  href="/services.html">Сервиси</a>
+            <a class="dropbtn"  href="/methodologies.html">Методологии</a>
+            <a class="dropbtn"  href="/about-us.html">За нас</a>
+            <a class="dropbtn"  href="/contact.html">Контакт</a>
+        </nav>
+        <input type="text" placeholder="🔍 Пребарај..." class="search" />
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
