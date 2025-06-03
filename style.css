@@ -146,3 +146,192 @@ body {
     border: 2.5px solid rgb(212, 134, 55);
   }
 }
+
+/* FOOTER CODE */
+.footer-wrapper {
+  background-color: #FFD700; /* Bright yellow from image */
+  border-radius: 30px; /* Large rounded corners for the outer wrapper */
+  padding: 10px; /* Space between outer yellow and inner white */
+  max-width: 100%;
+  margin: 40px auto; /* Centering and margin for demo */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 50px solid #FFD700; /* Thicker yellow border */
+}
+footer {
+  background-color: #FFFFFF; /* White background for the content area */
+  border-radius: 20px; /* Slightly smaller rounded corners for the inner part */
+  padding: 30px 40px;
+  border: 6px solid #FFB74D; /* Thicker inner border, adjust color as needed */
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 30px; /* Space between left and right columns */
+}
+.footer-left {
+    flex: 2; /* Takes more space */
+    min-width: 300px; /* Minimum width before wrapping */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between elements in the left column */
+}
+
+.footer-right {
+    flex: 2; /* Takes less space */
+    min-width: 250px; /* Minimum width before wrapping */
+    display: flex;
+    flex-direction: column;
+     /* Center map and address text */
+    min-height: auto;
+
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    margin-bottom: 10px;
+}
+
+
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.tagline {
+    font-size: 30px;
+    color: #555;
+    margin: 0 0 15px 0; /* Adjusted margin */
+    line-height: 1.5;
+}
+
+.footer-heading {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.contact-block, .follow-block {
+    margin-bottom: 10px;
+}
+
+.phone-number a,
+.email-section a {
+    font-size: 16px;
+    color: #007bff; /* Standard link blue, or choose one from image if discernible */
+    text-decoration: none;
+}
+
+.phone-number a:hover,
+.email-section a:hover {
+    text-decoration: underline;
+}
+
+.email-section {
+    background-color: #FFEB99; /* Lighter yellow for the email background bar, adjust if needed */
+    padding: 12px 15px;
+    margin: 5px 0; /* Give it some vertical space */
+    border-radius: 8px; /* Rounded corners for the yellow bar */
+}
+
+.email-section p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px; /* Space between icons */
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid #FFB74D; /* Light orange/peach border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Icon color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon svg {
+    width: 18px; /* Control size of SVG inside the circle */
+    height: 18px;
+}
+
+.social-icon:hover {
+    background-color: #FFB74D;
+    color: #fff;
+}
+
+
+
+.address-text {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+    }
+
+    .footer-left, .footer-right {
+        flex: none; /* Disable flex-grow/shrink */
+        width: 100%; /* Full width for stacked items */
+        max-width: 500px; /* Optional: constrain width on mobile */
+        align-items: flex-start; /* Align left content to start */
+    }
+    
+    .footer-right {
+        align-items: center; /* Center map and address in its column */
+    }
+
+    .email-section {
+        /* Ensure it doesn't stretch excessively if left column is centered */
+        align-self: stretch; 
+    }
+
+    .logo-section, .tagline, .contact-block, .email-section, .follow-block {
+        padding-left: 10px; /* Add some padding if elements feel too close to edge */
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-wrapper {
+        border-radius: 20px;
+        padding: 5px;
+    }
+    footer {
+        padding: 50px;
+        border-radius: 15px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .tagline, .phone-number a, .email-section a {
+        font-size: 14px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .social-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+}
