@@ -168,7 +168,7 @@ body {
 
 .service-title {
   font-size: 40px;
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   color: #f28b47;
   margin: 0;
 }
@@ -267,7 +267,7 @@ body {
 .info-text h2 {
   font-size: 32px;
   color: #f28b47;
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -313,7 +313,7 @@ body {
 .more-info-section h3 {
   font-size: 28px;
   color: #f28b47;
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   margin-bottom: 15px;
 }
 
@@ -352,7 +352,7 @@ body {
   margin-bottom: 30px;
   color: #f28b47;
   font-weight: 700;
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
 }
 
 .cards-container {
@@ -381,7 +381,7 @@ body {
 }
 
 .card-title {
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   font-size: 24px;
   color: #f28b47;
   margin: 0 0 12px 0;
@@ -543,7 +543,7 @@ body {
 }
 
 .modal-content h2 {
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   color: #f28b47;
   font-size: 28px;
   margin-bottom: 15px;
@@ -648,7 +648,7 @@ body {
 }
 
 .slider-section h3 {
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   color: #5ea690;
   font-size: 32px;
   margin-bottom: 25px;
@@ -733,7 +733,7 @@ body {
 }
 
 .testimonials-section h3 {
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   font-size: 32px;
   color: #f28b47;
   margin-bottom: 40px;
@@ -813,7 +813,7 @@ body {
 }
 
 .signup-section h3 {
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
   font-size: 32px;
   color: #f28b47;
   margin-bottom: 20px;
@@ -904,7 +904,7 @@ select {
   font-size: 28px;
   color: #f28b47;
   margin-bottom: 30px;
-  font-family: "Chewy", cursive;
+  font-family: "Quicksand", sans-serif;
 }
 
 .faq-item {
