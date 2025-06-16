@@ -5,6 +5,11 @@
 	overflow-x: hidden; 
 	overflow-y: auto; 
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Quicksand', sans-serif;
 }
@@ -31,7 +36,7 @@ body {
   height: 150px;
   margin: 5px 0 30px 0;
   cursor: pointer;
-  width: 150px;
+  width: 160px;
 }
 
 .nav-toggle {
