@@ -459,7 +459,7 @@ footer {
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
-        align-items: center; /* Center items when stacked */
+        align-items: center; 
     }
 
     .footer-left, .footer-right {
@@ -474,12 +474,11 @@ footer {
     }
 
     .email-section {
-        /* Ensure it doesn't stretch excessively if left column is centered */
         align-self: stretch; 
     }
 
     .logo-section, .tagline, .contact-block, .email-section, .follow-block {
-        padding-left: 10px; /* Add some padding if elements feel too close to edge */
+        padding-left: 10px; 
         padding-right: 10px;
     }
 }
