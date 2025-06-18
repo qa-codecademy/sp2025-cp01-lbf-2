@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Services Page -->
-  <!-- Header -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,40 +8,38 @@
       href="https://fonts.googleapis.com/css2?family=Balthazar&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <!-- Title -->
-    <title>LBF Project (Services Part)</title>
+    <title>LBF-PROJECT</title>
   </head>
-  <!-- Body -->
+
   <body>
-    <!-- Navbar -->
+    <!-- NavBar -->
     <div class="navbar">
-      <a href="/">
-        <img src="images-services/logo.png" alt="Logo" class="logo" />
+      <a href="../index.html">
+        <img src="./images-services/logo.png" alt="Logo" class="logo" />
       </a>
       <div class="nav-toggle" id="nav-toggle">&#9776;</div>
 
       <nav class="nav-links" id="nav-links">
         <div class="dropdown">
-          <a class="dropbtn" href="/programs" style="text-decoration: none">Програми &#9662;</a>
+          <a class="dropbtn" href="../programs/index.html" style="text-decoration: none">
+            Програми &#9662;
+          </a>
           <div class="dropdown-content">
             <a href="/mini-entrepreneurs">Мини Стартапџии</a>
             <a href="/future-founders">Идни основачи</a>
             <a href="/little-creators">Мали креатори</a>
           </div>
         </div>
-            <a class="dropbtn"  href="/lecturers/lecturers.html">Предавачи</a>
-            <a class="dropbtn"  href="/services">Услуги</a>
-            <a class="dropbtn"  href="/methodologies">Методологии</a>
-            <a class="dropbtn"  href="/about-us">За нас</a>
-            <a class="dropbtn"  href="/contact">Контакт</a>
+        <a class="dropbtn" href="../lecturers/lecturers.html">Предавачи</a>
+        <a class="dropbtn" href="../services/index.html">Услуги</a>
+        <a class="dropbtn" href="../methodologies/index.html">Методологии</a>
+        <a class="dropbtn" href="../about-us/index.html">За нас</a>
+        <a class="dropbtn" href="../contact/index.html">Контакт</a>
       </nav>
       <input type="text" placeholder="🔍 Пребарај..." class="search" />
     </div>
-    <!-- Image -->
+
+    <!-- Service section -->
     <section class="service-section">
       <div class="side-image left">
         <img src="./images-services/side-image-left.png" alt="Слика лево" />
@@ -61,7 +57,6 @@
         <img src="./images-services/side-image-right.JPG" alt="Слика десно" />
       </div>
     </section>
-
     <!-- Info - section-->
     <section class="info-section">
       <div class="info-text">
@@ -84,7 +79,6 @@
         <img src="./images-services/info-image.png" alt="Инфо слика" />
       </div>
     </section>
-
     <!-- More info - section -->
     <section id="more-info" class="more-info-section">
       <h3>Нашите услуги</h3>
@@ -583,12 +577,13 @@
         </div>
         <div class="footer-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=..."
-            width="100%"
-            height="200"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.0905888501734!2d21.42481047561023!3d41.998331357878534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354144cae363653%3A0x56a4e0712f335296!2sBlvd.%20Partizanski%20Odredi%206%2C%20Skopje%201000!5e0!3m2!1sen!2smk!4v1750275865320!5m2!1sen!2smk"
+            width="600"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
@@ -613,6 +608,7 @@
         </form>
       </div>
     </div>
-    <script src="services.js"></script>
+
+    <script src="./services.js"></script>
   </body>
 </html>
