@@ -232,6 +232,7 @@ body {
   flex-wrap: wrap;
   background-color: #fffaf0;
   margin-top: -30px;
+  margin-bottom: 30px;
 }
 
 .info-text {
