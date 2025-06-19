@@ -154,23 +154,15 @@ body {
 
 /****************************************/
 #meetOurTeam {
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 60px; 
-  font-weight: 800; 
-  line-height: 1.2;
-  color: #171d2b; 
   text-align: center;
-}
-@media (max-width: 768px) {
-  h1 {
-    font-size: 40px; /* Adjusted for smaller screens */
-  }
+  margin-top: 40px;
+  font-size: 50px;
 }
 #infoForTheTeam {
-  margin-top: 20px;
   text-align: center;
-  max-width: 1000px;
-  margin: 20px auto;
+  font-size: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 .grid {
   display: grid;
@@ -182,111 +174,222 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
-.squareEdit {
+.squares {
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 320px;
+  border-radius: 8%;
+  overflow: hidden;
+  margin: 0 auto 40px;
+}
+.squares img {
+  width: 110%;
+  height: 100%;
+  object-fit: fill
+}
+.squareEditElena {
   background-color: #f3b993;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   padding: 25px;
-  width: 600px;
+  height: fit-content;
+  width: 750px;
   gap: 20px;
   align-items: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
 }
-.squareEdit:hover {
+.squareEditElena:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameElena{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.subInfoElena {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+.lecturerInfoElena {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+}
+#elenaImg{
+  border-radius: 20px;
+}
+.squareEditViktor {
+  background-color: #f3b993;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 25px;
+  height: 465px;
+  width: 750px;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.squareEditViktor:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameViktor{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.subInfoViktor {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+.lecturerInfoViktor {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+  position: relative;
+  top: -30px;
+}
+#ViktorImg{
+  border-radius: 20px;
+}
+.squareEditJana {
+  background-color: #f3b993;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 25px;
+  height: fit-content;
+  width: 750px;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.squareEditJana:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameJana{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.lecturerInfoJana {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+  position: relative;
+  top: -15px;
+}
+.subInfoJana {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+#janaImg{
+  border-radius: 20px;
+}
+.squareEditDespina {
+  background-color: #f3b993;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 25px;
+  height: 433px;
+  width: 750px;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.squareEditDespina:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameDespina{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.lecturerInfoDespina {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+}
+.subInfoDespina {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+#despinaImg{
+  border-radius: 20px;
+}
+#guestLecturersTitle{
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#guestLecturers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  position: relative;
+  top: 10px;
 }
 .squareEdit2{
   background-color: #f3b993;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
-  flex-direction: column;
-  margin: 40px auto;
-  padding: 20px;
-  width: 600px;
   text-align: center;
-  align-items: center;
+  font-size: 16px;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  width: 700px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
 }
 .squareEdit2:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-#guestLecturersTitle{
-  font-size: 20px;
-  font-weight: bold;
-  color: #222;
-  margin-top: 10px;
-}
-.squares {
-  background-color: #d9d9d9;
-  width: 250px;
-  height: 320px;
-  border-radius: 10%;
-  overflow: hidden;
-  margin: 0 auto 40px;
-}
-.squares img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.lecturerDetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  text-align: left;
-}
-.lecturersName {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: #222;
-}
-.lecturerInfo {
-  font-size: 15px;
-  color: #222;
-  line-height: 1.4;
-  text-align: justify;
-  margin: 0;
-}
-.lecturerDetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  text-align: left;
-}
-.social-icons2 {
-    display: flex;
-    gap: 12px; /* Space between icons */
-    justify-content: center;
-}
-.social-icon2 {
-    width: 40px;
-    height: 40px;
-    border-radius: 15%;
-    border: 1.5px solid #000; /* Light orange/peach border */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333; /* Icon color */
-    transition: background-color 0.3s, color 0.3s;
-}
- .social-icon2 svg {
-    width: 18px; /* Control size of SVG inside the circle */
-    height: 18px;
-} 
-.social-icon2:hover {
-    background-color: #FFB74D;
-    color: #fff;
-}
 /******************************************/
+
 
 .footer-wrapper {
   background-color: #FFD700; /* Bright yellow from image */
@@ -356,6 +459,16 @@ footer {
     text-transform: uppercase;
 }
 
+#email{
+  font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    position: relative;
+    top: 15px;
+}
+
 .contact-block, .follow-block {
     margin-bottom: 10px;
 }
@@ -366,7 +479,12 @@ footer {
     color: #007bff; /* Standard link blue, or choose one from image if discernible */
     text-decoration: none;
 }
-
+.phone-number{
+  background-color: #FFEB99; /* Lighter yellow for the email background bar, adjust if needed */
+    padding: 12px 15px;
+    margin: 5px 0; /* Give it some vertical space */
+    border-radius: 8px;
+}
 .phone-number a:hover,
 .email-section a:hover {
     text-decoration: underline;
@@ -386,6 +504,7 @@ footer {
 .social-icons {
     display: flex;
     gap: 12px; /* Space between icons */
+    margin-top: 15px;;
 }
 
 .social-icon {
