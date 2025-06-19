@@ -1,12 +1,12 @@
-// ===== Navbar toggle =====
-const toggle = document.getElementById("nav-toggle");
-const navLinks = document.getElementById("nav-links");
+  // ===== Navbar toggle =====
+  const toggle = document.getElementById("nav-toggle");
+  const navLinks = document.getElementById("nav-links");
+  
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 
-toggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// ===== Modals =====
+  // ===== Modals =====
 const modals = document.querySelectorAll('.modal');
 const openModalButtons = document.querySelectorAll('.card-button');
 const closeButtons = document.querySelectorAll('.close');
@@ -56,6 +56,7 @@ function updateSlider() {
   const offset = -(images[0].offsetWidth + 20) * currentIndex; 
   sliderTrack.style.transform = `translateX(${offset}px)`;
 }
+
 
 prevBtn.addEventListener('click', () => {
   if (currentIndex > 0) {
