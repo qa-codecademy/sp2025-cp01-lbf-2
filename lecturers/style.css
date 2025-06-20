@@ -2,16 +2,13 @@
 	min-height: 100vh;   
 	max-height: 100%; 
 	width: 100%; 
+  margin: 0;
 	overflow-x: hidden; 
 	overflow-y: auto; 
 }
 body {
   font-family: 'Quicksand', sans-serif;
 }
-
-/* .dropdown-content:hover {
-  border-top: 5px solid #ffb583;
-} */
 
 .navbar {
   display: flex;
