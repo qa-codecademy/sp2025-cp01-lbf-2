@@ -1,17 +1,21 @@
-#allContent{
-	min-height: 100vh;   
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}*/
+body {
+  min-height: 100vh;   
 	max-height: 100%; 
 	width: 100%; 
 	overflow-x: hidden; 
 	overflow-y: auto; 
-}
-body {
   font-family: 'Quicksand', sans-serif;
 }
-
-/* .dropdown-content:hover {
-  border-top: 5px solid #ffb583;
-} */
 
 .navbar {
   display: flex;
@@ -152,7 +156,8 @@ body {
   }
 }
 
-/****************************************/
+/*******************LECTURERS*********************/
+
 #meetOurTeam {
   text-align: center;
   margin-top: 40px;
@@ -181,6 +186,7 @@ body {
   border-radius: 8%;
   overflow: hidden;
   margin: 0 auto 40px;
+  
 }
 .squares img {
   width: 110%;
