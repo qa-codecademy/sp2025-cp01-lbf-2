@@ -325,7 +325,7 @@ body {
   margin-right: calc(-50vw + 50%);
 }
 
-
+/* Footer begins ---------------------------*/
 .footer {
   background-color: #e6d3c7;
   color: rgb(50, 19, 19);
@@ -381,6 +381,7 @@ body {
   min-width: 300px;
   max-width: 500px;
   height: auto;
+  border-radius: 20px;
 }
 
 .footer-map iframe {

@@ -119,3 +119,4 @@ document.querySelectorAll('.signup-btn').forEach(btn => {
     document.body.style.overflow = 'hidden';
   });
 });
+
