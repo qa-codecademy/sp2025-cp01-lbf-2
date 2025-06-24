@@ -36,75 +36,120 @@
 </div>
 
 <main>
-    <!-- PROGRAM LISTING -->
-    <section class="program-listing">
-        <h1>Истражете ги нашите Програми</h1>
-        <!-- <section class="filters">
-            <i class="fa-solid fa-magnifying-glass"> </i><input type="text" id="search"
-                placeholder="Пребарај програми..." />
-            <select id="age-select">
-                <option value="">Сите возрасти</option>
-                <option value="6-9">6-9</option>
-                <option value="10-14">10-14</option>
-                <option value="15-18">15-18</option>
-            </select>
-            <select id="sort-select">
-                <option value="">Без сортирање</option>
-                <option value="price">По цена</option>
-                <option value="age">По возраст</option>
-            </select>
-            <div id="programs-container"></div>
-        </section> -->
-        
-        <div class="program-cards">
 
-            <div class="card">
-                <img src="cards1.jpeg" alt="Слика од програмата Мини стартапџии" />
-                <h3>КЛУБ “Мини стартапџии”</h3>
-                <p>Возраст: 15-18 години</p>
-                <p>Напреден курс за развој на стартап идеи и имплементација.</p>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
-                    <li><i class="fa-solid fa-book"></i> Вид: Проектно учење</li>
-                    <li><i class="fa-regular fa-circle-dot"></i> Ниво: Напредно</li>
-                    <li><i class="fa-solid fa-square-check"></i> Основи од бизнис и финансии</li>
-                    <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
-                </ul>
-                <a href="/mini-entrepreneurs.html" class="more-btn">Повеќе</a>
-            </div>
+<!-- PROGRAM LISTING -->
+<section class="program-listing">
+  <!-- HEADER -->
+  <div class="program-header">
+    <h1 class="page-title">Истражете ги нашите Програми</h1>
+     
+    <div class="header-controls">
+      <!-- Filter Button -->
+      <div class="filter-container">
+        <button class="filter-button" id="filter-toggle">Филтрирај <i class="fa-solid fa-filter"></i>
+          <span id="active-filter-count" class="filter-count-badge hidden"></span>
+        </button>
 
-            <div class="card">
-                <img src="cards2.jpg" alt="Идни основачи" />
-                <h3>КЛУБ “Идни основачи”</h3>
-                <p>Возраст: 10-14 години</p>
-                <p>Градење претприемачки вештини преку работа на реални проекти.</p>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
-                    <li><i class="fa-solid fa-book"></i> Вид: Тимска работа</li>
-                    <li><i class="fa-regular fa-circle-dot"></i> Ниво: Средно</li>
-                    <li><i class="fa-solid fa-square-check"></i> Претходно познавање на основни концепти</li>
-                    <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
-                </ul>
-                <a href="/future-founders.html" class="more-btn">Повеќе</a>
-            </div>
+        <div class="filter-dropdown hidden" id="filter-dropdown">
+          <p class="filter-section-title">— Возраст —</p>
+          <select id="age-filter" class="filter-select">
+            <option value="">Сите</option>
+            <option value="6-9">6-9 години</option>
+            <option value="10-14">10-14 години</option>
+            <option value="15-18">15-18 години</option>
+          </select>
 
-            <div class="card">
-                <img src="cards3.jpg" alt="Мали Креатори" />
-                <h3>КЛУБ “Мали креатори”</h3>
-                <p>Возраст: 6-9 години</p>
-                <p>Креативна и практична настава за најмладите истражувачи.</p>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
-                    <li><i class="fa-solid fa-book"></i> Вид: Интерактивни работилници</li>
-                    <li><i class="fa-regular fa-circle-dot"></i> Ниво: Почетно</li>
-                    <li><i class="fa-solid fa-square-check"></i> Без предзнаење</li>
-                    <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
-                </ul>
-                <a href="/little-creators.html" class="more-btn">Повеќе</a>
-            </div>
+          <p class="filter-section-title">— Цена —</p>
+          <select id="price-filter" class="filter-select">
+            <option value="">Сите</option>
+            <option value="3000">До 3000 денари</option>
+            <option value="3500">До 3500 денари</option>
+            <option value="4000">До 4000 денари</option>
+          </select>
+
+          <p class="filter-section-title">— Предавачи —</p>
+          <select id="instructor-filter" class="filter-select" multiple size="5">
+            <option value="">Сите</option>
+            <option value="Elena">Елена</option>
+            <option value="Viktor">Виктор</option>
+            <option value="Despina">Деспина</option>
+            <option value="Jana">Јана</option>
+          </select>
+
+          <button id="apply-filters" class="apply-filters-btn">Примени филтри</button>
+          <button id="reset-filters" class="apply-filters-btn">Исчисти филтри</button>
         </div>
+      </div>
+
+      <!-- Sort Button -->
+      <div class="sort-container">
+        <button class="sort-button" id="sort-toggle">Сортирај <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="sort-dropdown hidden" id="sort-dropdown">
+          <p class="sort-price-title">— Сортирај по цена —</p>
+          <div class="sort-option" data-sort="price-asc">Најниска кон највисока</div>
+          <div class="sort-option" data-sort="price-desc">Највисока кон најниска</div>
+          <p class="sort-age-title">— Сортирај по возраст —</p>
+          <div class="sort-option" data-sort="age-asc">Од најмала кон најголема</div>
+          <div class="sort-option" data-sort="age-desc">Од најголема кон најмала</div>
         </div>
-    </section>
+      </div>
+    </div> <!-- .header-controls -->
+  </div> <!-- .program-header -->
+
+  <div class="program-cards">
+    <div class="card" data-price="4000" data-age="15-18" data-instructor="Viktor">
+      <img src="cards1.jpeg" alt="Слика од програмата Мини стартапџии" />
+      <h3>КЛУБ “Мини стартапџии”</h3>
+      <p>Возраст: 15-18 години</p>
+      <p>Напреден курс за развој на стартап идеи и имплементација.</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
+        <li><i class="fa-solid fa-book"></i> Вид: Проектно учење</li>
+        <li><i class="fa-regular fa-circle-dot"></i> Ниво: Напредно</li>
+        <li><i class="fa-solid fa-square-check"></i> Основи од бизнис и финансии</li>
+        <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
+        <li><i class="fa-solid fa-circle-dot"></i> Предавач/и: Виктор Митевски</li>
+        <li><i class="fa-solid fa-tag"></i> Цена: 4,000.00 денари</li>
+      </ul>
+      <a href="/mini-entrepreneurs.html" class="more-btn">Повеќе</a>
+    </div>
+
+    <div class="card" data-price="3500" data-age="10-14" data-instructor="Elena">
+      <img src="cards2.jpg" alt="Идни основачи" />
+      <h3>КЛУБ “Идни основачи”</h3>
+      <p>Возраст: 10-14 години</p>
+      <p>Градење претприемачки вештини преку работа на реални проекти.</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
+        <li><i class="fa-solid fa-book"></i> Вид: Тимска работа</li>
+        <li><i class="fa-regular fa-circle-dot"></i> Ниво: Средно</li>
+        <li><i class="fa-solid fa-square-check"></i> Претходно познавање на основни концепти</li>
+        <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
+        <li><i class="fa-solid fa-circle-dot"></i> Предавач/и: Елена Хаџи Пецова</li>
+        <li><i class="fa-solid fa-tag"></i> Цена: 3,500.00 денари</li>
+      </ul>
+      <a href="/future-founders.html" class="more-btn">Повеќе</a>
+    </div>
+
+    <div class="card" data-price="3000" data-age="6-9" data-instructor="Jana">
+      <img src="cards3.jpg" alt="Мали Креатори" />
+      <h3>КЛУБ “Мали креатори”</h3>
+      <p>Возраст: 6-9 години</p>
+      <p>Креативна и практична настава за најмладите истражувачи.</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
+        <li><i class="fa-solid fa-book"></i> Вид: Интерактивни работилници</li>
+        <li><i class="fa-regular fa-circle-dot"></i> Ниво: Почетно</li>
+        <li><i class="fa-solid fa-square-check"></i> Без предзнаење</li>
+        <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
+        <li><i class="fa-solid fa-circle-dot"></i> Предавач/и: Јана Џеков</li>
+        <li><i class="fa-solid fa-tag"></i> Цена: 3,000.00 денари</li>
+      </ul>
+      <a href="/little-creators.html" class="more-btn">Повеќе</a>
+    </div>
+  </div> 
+</section>
+
 
     <!-- WHY JOIN SECTION -->
     <section class="why-join">
@@ -117,6 +162,7 @@
             </li>
         </ul>
     </section>
+
 
     <!-- SKILLS GAINED SECTION -->
     <section class="skills-section">
