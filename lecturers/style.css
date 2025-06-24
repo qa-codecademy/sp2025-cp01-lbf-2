@@ -161,7 +161,7 @@ body {
   text-align: center;
   font-size: 20px;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 30px auto;
 }
 .grid {
   display: grid;
@@ -169,7 +169,7 @@ body {
   position: relative;
   gap: 50px 50px;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -190,6 +190,7 @@ body {
 .squareEditElena {
   background-color: #f3b993;
   border-radius: 20px;
+  border: 2px solid #f28b47;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   padding: 25px;
@@ -231,6 +232,7 @@ body {
 .squareEditViktor {
   background-color: #f3b993;
   border-radius: 20px;
+  border: 2px solid #f28b47;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   padding: 25px;
@@ -266,7 +268,7 @@ body {
   line-height: 1.4;
   text-align: justify;
   position: relative;
-  top: -30px;
+  top: -40px;
 }
 #ViktorImg{
   border-radius: 20px;
@@ -274,6 +276,7 @@ body {
 .squareEditJana {
   background-color: #f3b993;
   border-radius: 20px;
+  border: 2px solid #f28b47;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   padding: 25px;
@@ -317,6 +320,7 @@ body {
 .squareEditDespina {
   background-color: #f3b993;
   border-radius: 20px;
+  border: 2px solid #f28b47;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   padding: 25px;
@@ -374,6 +378,7 @@ body {
 .squareEdit2{
   background-color: #f3b993;
   border-radius: 20px;
+  border: 2px solid #f28b47;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   text-align: center;

@@ -125,7 +125,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   margin-top: -20px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #ffffffd9;
   backdrop-filter: blur(10px); 
   color: rgb(212, 134, 55);
   min-width: 160px;
