@@ -25,7 +25,6 @@ const programs = [
   }
   ];
 
-
 const filterToggleBtn = document.getElementById('filter-toggle');
 const filterDropdown = document.getElementById('filter-dropdown');
 const applyFiltersBtn = document.getElementById('apply-filters');
