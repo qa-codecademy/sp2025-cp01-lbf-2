@@ -60,21 +60,22 @@
           </select>
 
           <p class="filter-section-title">— Цена —</p>
-          <select id="price-filter" class="filter-select">
-            <option value="">Сите</option>
-            <option value="3000">До 3000 денари</option>
-            <option value="3500">До 3500 денари</option>
-            <option value="4000">До 4000 денари</option>
-          </select>
+          <div class="filter-price-range">
+            <div class="slider">
+              <input type="range" id="minRange" min="0" max="4000" value="0" step="100">
+              <input type="range" id="maxRange" min="0" max="4000" value="4000" step="100">
+            <div class="slider-track" id="sliderTrack"></div>
+            </div>
+            <div class="price-output" id="priceOutput">Од 0 ден – До 4000 ден</div>
+          </div>
 
           <p class="filter-section-title">— Предавачи —</p>
-          <select id="instructor-filter" class="filter-select" multiple size="5">
-            <option value="">Сите</option>
-            <option value="Elena">Елена</option>
-            <option value="Viktor">Виктор</option>
-            <option value="Despina">Деспина</option>
-            <option value="Jana">Јана</option>
-          </select>
+          <div class="custom-instructor-filter" id="instructor-list">
+            <div class="instructor-option" data-value="Elena">Елена Хаџи Пецова</div>
+            <div class="instructor-option" data-value="Viktor">Виктор Митевски</div>
+            <div class="instructor-option" data-value="Despina">Деспина Стојановска</div>
+            <div class="instructor-option" data-value="Jana">Јана Џеков</div>
+          </div>
 
           <button id="apply-filters" class="apply-filters-btn">Примени филтри</button>
           <button id="reset-filters" class="apply-filters-btn">Исчисти филтри</button>

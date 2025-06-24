@@ -855,14 +855,15 @@ p {
   background-color: #f28b47;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 8px 16px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   width: 100%;
   margin-top: 10px;
   transition: background-color 0.3s ease;
   box-sizing: border-box;
+  margin-top: 1px;
 }
 
 .apply-filters-btn:hover {
@@ -882,13 +883,14 @@ p {
 }
 
 .sort-option:hover {
-  background-color: rgb(230, 175, 120);
+  background-color: rgb(247, 230, 215);
 }
 
 .sort-option.selected {
   font-weight: bold;
-  color: rgb(212, 134, 55);
+  color: #f28b47;
 }
+
 
 /* === SPECIAL CASE: ONE VISIBLE CARD === */
 
@@ -922,4 +924,103 @@ p {
   .header-controls {
     margin-left: 0;
   }
+}
+
+/* ==== PRICE SLIDER ==== */
+
+.slider {
+  position: relative;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #f28b47;
+  border: 2px solid #fff;
+  cursor: pointer;
+  z-index: 4;
+  pointer-events: auto;
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #f28b47;
+  border: 2px solid #fff;
+  cursor: pointer;
+  z-index: 4;
+  pointer-events: auto;
+}
+
+.slider-track {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  width: 100%;
+  background: #373636; 
+  border-radius: 3px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.slider-track::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #f28b47;
+  left: var(--start, 0%);
+  width: calc(var(--end, 100%) - var(--start, 0%));
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.instructor-option {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 0.3s ease;
+}
+
+.instructor-option.selected {
+  color: #100701;
+}
+
+.instructor-option.selected::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  color: #f28b47;
+}
+
+.custom-instructor-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.instructor-option:hover {
+  background-color: #f3f3f3;
 }
