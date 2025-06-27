@@ -5,6 +5,19 @@
     navLinks.classList.toggle("active");
   });
 
+///////////////SUBMIT BUTTON MESSAGE/////////////////
+const form = document.getElementById('contactForm');
+const tnx = document.getElementById('tnxMsg');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+    form.style.display = 'none';
+    tnx.style.display = 'block';
+    setTimeout(() => {
+      tnx.classList.add('show');
+    }, 10);
+});
+//////////////////////////////////////////////////////
+
    // ===== Contact modal =====
 const contactBtn = document.getElementById("openContactModal");
 const contactModal = document.getElementById("contactModal");
@@ -26,19 +39,3 @@ window.addEventListener("click", (e) => {
     document.body.style.overflow = "";
   }
 });
-
-// ScrollToTopBtn
-
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-  window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      scrollToTopBtn.style.display = "block";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }
-  };
-
-  scrollToTopBtn.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });

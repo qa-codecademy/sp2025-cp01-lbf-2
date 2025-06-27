@@ -1,16 +1,14 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
+  min-height: 100vh;   
+	max-height: 100%; 
+	width: 100%; 
+  margin: 0;
+	overflow-x: hidden; 
+	overflow-y: auto; 
   font-family: 'Quicksand', sans-serif;
 }
 
-/* .dropdown-content:hover {
-  border-top: 5px solid #ffb583;
-} */
+/*******************NAVBAR*********************/
 
 .navbar {
   display: flex;
@@ -18,8 +16,8 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 20px;
-  height: 170px;
-  background-image: url('images/wave.png');
+  height: 190px;
+  background-image: url('wave.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -76,7 +74,6 @@ body {
 
 }
 
-
 .dropdown {
   position: relative;
   margin: 20px 0 20px 0;
@@ -85,7 +82,6 @@ body {
   align-items: center;
  
 }
-
 
 .dropdown-content {
   display: none;
@@ -96,7 +92,7 @@ body {
   margin-top: -20px;
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px); 
-  color: rgb(212, 134, 55);
+  color: #d48637;
   min-width: 160px;
   border-radius: 5px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -122,128 +118,285 @@ body {
   font-size: 16px;
   margin: 10px 0 30px 0;
 }
+
 @media (max-width: 900px) {
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: #f69d62;
-    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.2);
     margin-top: 10px;
-    align-items: center;
+    padding: 10px 0;
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .navbar.active {
-    margin-bottom: 40rem;
+  .nav-toggle {
+    display: block;
   }
+
+  
 
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
-  .navbar {
-    background-position: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 10px 20px;
-  }
-
-  .logo {
-    height: 100px;
-    width: auto;
-    margin: 0;
-  }
-
-  .nav-toggle {
-    display: block;
-    font-size: 28px;
-    margin-left: auto;
-  }
-
   .search {
     width: 100%;
-    margin: 10px 0;
     border: 2.5px solid rgb(212, 134, 55);
   }
 }
- 
-.about-header {
-  background-color: white;
-  padding: 50px 60px;
+
+/*******************LECTURERS*********************/
+
+#meetOurTeam {
   text-align: center;
+  margin-top: 40px;
+  font-size: 50px;
+  color: #e67f3a;
 }
-
-.about-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
-  line-height: 1.2;
-  color: #e29547;
+#infoForTheTeam {
+  text-align: center;
+  font-size: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
 }
-
-.about-header p {
-  font-size: 18px;
-  color: #555;
-  margin-top: 10px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  gap: 50px 50px;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-
-.content-block {
+.squares {
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 320px;
+  border-radius: 8%;
+  overflow: hidden;
+  margin: 0 auto 40px;
+  
+}
+.squares img {
+  width: 110%;
+  height: 100%;
+  object-fit: fill
+}
+.squareEditElena {
+  background-color: #f3b993;
+  border-radius: 20px;
+  border: 2px solid #f28b47;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
+  padding: 25px;
+  height: fit-content;
+  width: 750px;
+  gap: 20px;
   align-items: center;
-  justify-content: space-between;
-  margin: 60px 0;
-  flex-wrap: wrap;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.squareEditElena:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameElena{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.subInfoElena {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+.lecturerInfoElena {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+}
+#elenaImg{
+  border-radius: 20px;
+}
+.squareEditViktor {
+  background-color: #f3b993;
+  border-radius: 20px;
+  border: 2px solid #f28b47;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 25px;
+  height: 465px;
+  width: 750px;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.squareEditViktor:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameViktor{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.subInfoViktor {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+.lecturerInfoViktor {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+  position: relative;
+  top: -40px;
+}
+#ViktorImg{
+  border-radius: 20px;
+}
+.squareEditJana {
+  background-color: #f3b993;
+  border-radius: 20px;
+  border: 2px solid #f28b47;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 25px;
+  height: fit-content;
+  width: 750px;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.squareEditJana:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameJana{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.lecturerInfoJana {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+  position: relative;
+  top: -15px;
+}
+.subInfoJana {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+#janaImg{
+  border-radius: 20px;
+}
+.squareEditDespina {
+  background-color: #f3b993;
+  border-radius: 20px;
+  border: 2px solid #f28b47;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 25px;
+  height: 433px;
+  width: 750px;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.squareEditDespina:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.lecturersNameDespina{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -15px;
+}
+.lecturerInfoDespina {
+  font-size: 15.5px;
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+}
+.subInfoDespina {
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: -25px;
+}
+#despinaImg{
+  border-radius: 20px;
+}
+#guestLecturersTitle{
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#guestLecturers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  position: relative;
+  top: 10px;
+}
+.squareEdit2{
+  background-color: #f3b993;
+  border-radius: 20px;
+  border: 2px solid #f28b47;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  width: 700px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.squareEdit2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.image {
-  flex: 1;
-  padding:  20px 40px;
-}
 
-.image img {
-  width: 90%;
-  border-radius: 12px;
-  object-fit: cover;
-  padding-left: 5px;
-}
+/*******************FOOTER*********************/
 
-.text {
-  flex: 1;
-  padding: 10px 20px;
-  text-align:left;
-  background-color:#fffaf0;
-  border-radius: 35px;
-}
-
-.text h2 {
-  color: #e29547;
-  margin-bottom: 30px;
-}
-
-.text p {
-  line-height: 1.6;
-  color: #333;
-}
-.custom-dots {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.custom-dots li {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.image-section:hover {
-  transform: scale(1.1);
-}
-/* Footer */
 .footer {
   background-color: #e6d3c7;
   color: rgb(50, 19, 19);
@@ -629,34 +782,5 @@ body {
 
   .address-image {
     margin-top: 30px;
-  }
-}
-
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 50px;
-  right: 70px;
-  z-index: 100;
-  background-color: #f28b47;
-  color: white;
-  border: none;
-  padding: 9px 20px;
-  border-radius: 40%;
-  font-size: 50px;
-  cursor: pointer;
-  display: none;
-  box-shadow: 5 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease;
-}
-
-#scrollToTopBtn:hover {
-  background-color: #e07a29;
-}
-@media (max-width: 768px) {
-  #scrollToTopBtn {
-    padding: 16px 20px;
-    font-size: 26px;
-    bottom: 20px;
-    right: 20px;
   }
 }

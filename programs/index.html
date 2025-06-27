@@ -9,102 +9,153 @@
     <script src="https://kit.fontawesome.com/77e25ee663.js" crossorigin="anonymous"></script>
     <title>LBF-PROJECT</title>
 </head>
-<div class="navbar">
-    <a href="/">
-        <img src="logo.png" alt="Logo" class="logo" style="width: 250px; height: auto;" />
-    </a>
-    <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+<!-- Navbar -->
+    <div class="navbar">
+      <a href="../home-page/index.html">
+        <img src="./logo.png" alt="Logo" class="logo" />
+      </a>
+      <div class="nav-toggle" id="nav-toggle">&#9776;</div>
 
-    <nav class="nav-links" id="nav-links">
+      <nav class="nav-links" id="nav-links">
         <div class="dropdown">
-            <a class="dropbtn" href="/programs/" style="text-decoration: none;">
-                Програми &#9662;
-            </a>
-            <div class="dropdown-content">
-                    <a href="/mini-entrepreneurs">Мини Стартапџии</a>
-                    <a href="/future-founders">Идни основачи</a>
-                    <a href="/little-creators">Мали креатори</a>
-            </div>
+          <a
+            class="dropbtn"
+            href="../programs/index.html"
+            style="text-decoration: none"
+          >
+            Програми &#9662;
+          </a>
+          <div class="dropdown-content">
+            <a href="/programs-details-page/mini-startapdzii.html">Мини Стартапџии</a>
+            <a href="/programs-details-page/idni-osnovaci.html">Идни основачи</a>
+            <a href="/programs-details-page/mali-kreatori.html">Мали креатори</a>
+          </div>
         </div>
-            <a class="dropbtn"  href="/lecturers/lecturers.html">Предавачи</a>
-            <a class="dropbtn"  href="/services">Услуги</a>
-            <a class="dropbtn"  href="/methodologies">Методологии</a>
-            <a class="dropbtn"  href="/about-us">За нас</a>
-            <a class="dropbtn"  href="/contact">Контакт</a>
-    </nav>
-    <input type="text" placeholder="🔍 Пребарај..." class="search" />
-</div>
+        <a class="dropbtn" href="../lecturers/index.html">Предавачи</a>
+        <a class="dropbtn" href="../services/index.html">Услуги</a>
+        <a class="dropbtn" href="../methodologies/index.html">Методологии</a>
+        <a class="dropbtn" href="../about-us/index.html">За нас</a>
+        <a class="dropbtn" href="../contact/index.html">Контакт</a>
+      </nav>
+      <input type="text" placeholder="🔍 Пребарај..." class="search" />
+    </div>
 
 <main>
-    <!-- PROGRAM LISTING -->
-    <section class="program-listing">
-        <h1>Истражете ги нашите Програми</h1>
-        <!-- <section class="filters">
-            <i class="fa-solid fa-magnifying-glass"> </i><input type="text" id="search"
-                placeholder="Пребарај програми..." />
-            <select id="age-select">
-                <option value="">Сите возрасти</option>
-                <option value="6-9">6-9</option>
-                <option value="10-14">10-14</option>
-                <option value="15-18">15-18</option>
-            </select>
-            <select id="sort-select">
-                <option value="">Без сортирање</option>
-                <option value="price">По цена</option>
-                <option value="age">По возраст</option>
-            </select>
-            <div id="programs-container"></div>
-        </section> -->
-        
-        <div class="program-cards">
 
-            <div class="card">
-                <img src="cards1.jpeg" alt="Слика од програмата Мини стартапџии" />
-                <h3>КЛУБ “Мини стартапџии”</h3>
-                <p>Возраст: 15-18 години</p>
-                <p>Напреден курс за развој на стартап идеи и имплементација.</p>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
-                    <li><i class="fa-solid fa-book"></i> Вид: Проектно учење</li>
-                    <li><i class="fa-regular fa-circle-dot"></i> Ниво: Напредно</li>
-                    <li><i class="fa-solid fa-square-check"></i> Основи од бизнис и финансии</li>
-                    <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
-                </ul>
-                <a href="/mini-entrepreneurs.html" class="more-btn">Повеќе</a>
-            </div>
+<!-- PROGRAM LISTING -->
+<section class="program-listing">
+  <!-- HEADER -->
+  <div class="program-header">
+    <h1 class="page-title">Истражете ги нашите Програми</h1>
+     
+    <div class="header-controls">
+      <!-- Filter Button -->
+      <div class="filter-container">
+        <button class="filter-button" id="filter-toggle">Филтрирај <i class="fa-solid fa-filter"></i>
+          <span id="active-filter-count" class="filter-count-badge hidden"></span>
+        </button>
 
-            <div class="card">
-                <img src="cards2.jpg" alt="Идни основачи" />
-                <h3>КЛУБ “Идни основачи”</h3>
-                <p>Возраст: 10-14 години</p>
-                <p>Градење претприемачки вештини преку работа на реални проекти.</p>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
-                    <li><i class="fa-solid fa-book"></i> Вид: Тимска работа</li>
-                    <li><i class="fa-regular fa-circle-dot"></i> Ниво: Средно</li>
-                    <li><i class="fa-solid fa-square-check"></i> Претходно познавање на основни концепти</li>
-                    <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
-                </ul>
-                <a href="/future-founders.html" class="more-btn">Повеќе</a>
-            </div>
+        <div class="filter-dropdown hidden" id="filter-dropdown">
+          <p class="filter-section-title">— Возраст —</p>
+          <select id="age-filter" class="filter-select">
+            <option value="">Сите</option>
+            <option value="6-9">6-9 години</option>
+            <option value="10-14">10-14 години</option>
+            <option value="15-18">15-18 години</option>
+          </select>
 
-            <div class="card">
-                <img src="cards3.jpg" alt="Мали Креатори" />
-                <h3>КЛУБ “Мали креатори”</h3>
-                <p>Возраст: 6-9 години</p>
-                <p>Креативна и практична настава за најмладите истражувачи.</p>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
-                    <li><i class="fa-solid fa-book"></i> Вид: Интерактивни работилници</li>
-                    <li><i class="fa-regular fa-circle-dot"></i> Ниво: Почетно</li>
-                    <li><i class="fa-solid fa-square-check"></i> Без предзнаење</li>
-                    <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
-                </ul>
-                <a href="/little-creators.html" class="more-btn">Повеќе</a>
+          <p class="filter-section-title">— Цена —</p>
+          <div class="filter-price-range">
+            <div class="slider">
+              <input type="range" id="minRange" min="0" max="4000" value="0" step="100">
+              <input type="range" id="maxRange" min="0" max="4000" value="4000" step="100">
+            <div class="slider-track" id="sliderTrack"></div>
             </div>
+            <div class="price-output" id="priceOutput">Од 0 ден – До 4000 ден</div>
+          </div>
+
+          <p class="filter-section-title">— Предавачи —</p>
+          <div class="custom-instructor-filter" id="instructor-list">
+            <div class="instructor-option" data-value="Elena">Елена Хаџи Пецова</div>
+            <div class="instructor-option" data-value="Viktor">Виктор Митевски</div>
+            <div class="instructor-option" data-value="Despina">Деспина Стојановска</div>
+            <div class="instructor-option" data-value="Jana">Јана Џеков</div>
+          </div>
+
+          <button id="apply-filters" class="apply-filters-btn">Примени филтри</button>
+          <button id="reset-filters" class="apply-filters-btn">Исчисти филтри</button>
         </div>
+      </div>
+
+      <!-- Sort Button -->
+      <div class="sort-container">
+        <button class="sort-button" id="sort-toggle">Сортирај <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="sort-dropdown hidden" id="sort-dropdown">
+          <p class="sort-price-title">— Сортирај по цена —</p>
+          <div class="sort-option" data-sort="price-asc">Најниска кон највисока</div>
+          <div class="sort-option" data-sort="price-desc">Највисока кон најниска</div>
+          <p class="sort-age-title">— Сортирај по возраст —</p>
+          <div class="sort-option" data-sort="age-asc">Од најмала кон најголема</div>
+          <div class="sort-option" data-sort="age-desc">Од најголема кон најмала</div>
         </div>
-    </section>
+      </div>
+    </div> <!-- .header-controls -->
+  </div> <!-- .program-header -->
+
+  <div class="program-cards">
+    <div class="card" data-price="4000" data-age="15-18" data-instructor="Viktor">
+      <img src="cards1.jpeg" alt="Слика од програмата Мини стартапџии" />
+      <h3>КЛУБ “Мини стартапџии”</h3>
+      <p>Возраст: 15-18 години</p>
+      <p>Напреден курс за развој на стартап идеи и имплементација.</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
+        <li><i class="fa-solid fa-book"></i> Вид: Проектно учење</li>
+        <li><i class="fa-regular fa-circle-dot"></i> Ниво: Напредно</li>
+        <li><i class="fa-solid fa-square-check"></i> Основи од бизнис и финансии</li>
+        <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
+        <li><i class="fa-solid fa-circle-dot"></i> Предавач/и: Виктор Митевски</li>
+        <li><i class="fa-solid fa-tag"></i> Цена: 4,000.00 денари</li>
+      </ul>
+      <a href="/mini-entrepreneurs.html" class="more-btn">Повеќе</a>
+    </div>
+
+    <div class="card" data-price="3500" data-age="10-14" data-instructor="Elena">
+      <img src="cards2.jpg" alt="Идни основачи" />
+      <h3>КЛУБ “Идни основачи”</h3>
+      <p>Возраст: 10-14 години</p>
+      <p>Градење претприемачки вештини преку работа на реални проекти.</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
+        <li><i class="fa-solid fa-book"></i> Вид: Тимска работа</li>
+        <li><i class="fa-regular fa-circle-dot"></i> Ниво: Средно</li>
+        <li><i class="fa-solid fa-square-check"></i> Претходно познавање на основни концепти</li>
+        <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
+        <li><i class="fa-solid fa-circle-dot"></i> Предавач/и: Елена Хаџи Пецова</li>
+        <li><i class="fa-solid fa-tag"></i> Цена: 3,500.00 денари</li>
+      </ul>
+      <a href="/future-founders.html" class="more-btn">Повеќе</a>
+    </div>
+
+    <div class="card" data-price="3000" data-age="6-9" data-instructor="Jana">
+      <img src="cards3.jpg" alt="Мали Креатори" />
+      <h3>КЛУБ “Мали креатори”</h3>
+      <p>Возраст: 6-9 години</p>
+      <p>Креативна и практична настава за најмладите истражувачи.</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Времетраење: // недели</li>
+        <li><i class="fa-solid fa-book"></i> Вид: Интерактивни работилници</li>
+        <li><i class="fa-regular fa-circle-dot"></i> Ниво: Почетно</li>
+        <li><i class="fa-solid fa-square-check"></i> Без предзнаење</li>
+        <li><i class="fa-solid fa-calendar-days"></i> Старт: // </li>
+        <li><i class="fa-solid fa-circle-dot"></i> Предавач/и: Јана Џеков</li>
+        <li><i class="fa-solid fa-tag"></i> Цена: 3,000.00 денари</li>
+      </ul>
+      <a href="/little-creators.html" class="more-btn">Повеќе</a>
+    </div>
+  </div> 
+</section>
+
 
     <!-- WHY JOIN SECTION -->
     <section class="why-join">
@@ -117,6 +168,7 @@
             </li>
         </ul>
     </section>
+
 
     <!-- SKILLS GAINED SECTION -->
     <section class="skills-section">
@@ -149,60 +201,78 @@
     </section>
 </main>
 
-<div class="footer-wrapper">
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-
-                <img src="logo.png" alt="Logo" class="logo" style="width: 250px; height: auto;" />
-
-                <p class="tagline">Имате прашања? Контактирајте нас!</p>
-
-                <div class="contact-block">
-                    <h3 class="footer-heading">CONTACT</h3>
-                    <p class="phone-number"><a href="tel:+13232751718">+1 (323) 275-1718</a></p>
-                </div>
-
-                <div class="email-section">
-                    <p><a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a></p>
-                </div>
-
-                <div class="follow-block">
-                    <h3 class="footer-heading">FOLLOW US</h3>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Instagram" class="social-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.74 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.74 0 12s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.74 24 12 24s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.687.073-4.947s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98C15.667.014 15.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="WhatsApp" class="social-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 1.62c4.54 0 8.28 3.74 8.28 8.28 0 4.54-3.74 8.28-8.28 8.28-1.48 0-2.91-.39-4.16-1.12l-.3-.18-3.07.81.83-3.01-.2-.32A8.18 8.18 0 013.76 11.9C3.76 7.37 7.5 3.62 12.04 3.62zm-1.49 4.03h-.01c-.36 0-.72.11-.91.3l-.1.09c-.44.44-.62 1.1-.82 1.58-.19.48-.38.95-.57 1.43-.28.75-.57 1.5-.09 2.25s1.21 1.5 2.25 2.42c1.5 1.33 2.42 1.68 3.38 1.88.48.09.95.09 1.33-.09.66-.38.95-1.03.95-1.68s-.09-.85-.19-1.03l-.1-.19c-.09-.09-.19-.19-.38-.28-.19-.09-.38-.09-.57 0l-.85.38c-.19.09-.38.19-.66.09-.28-.09-.95-.38-1.88-1.12s-1.43-1.43-1.58-1.68c-.09-.19-.09-.48 0-.66l.28-.38c.09-.09.19-.19.19-.38s0-.28-.09-.38l-.95-1.12c-.19-.28-.38-.38-.57-.38z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Telegram" class="social-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M9.78 18.65l.28-4.23-7.68-2.62c-.8-.27-.8-1.28.09-1.53l18.63-6.65c.75-.27 1.44.28 1.15 1.09l-4.08 16.15c-.22.89-1.04 1.14-1.75.55L9.78 18.65zM11.45 14.49l6.55-5.8-8.45 2.75 1.9 3.05z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+<!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <img src="logo.png" alt="Лого" class="footer-logo" />
+          <p>📞 +389(0)70800651</p>
+          <p>📧 littlebigfounders@gmail.com</p>
+          <p>📍 Бул. Партизански Одреди 6/1 Скопје, Македонија</p>
+          <div class="footer-socials">
+            <div class="footer-socials">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="/sp2025-cp01-lbf-2/universal-images/facebook.png" alt="Facebook" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="/sp2025-cp01-lbf-2/universal-images/instagram.webp" alt="Instagram" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="/sp2025-cp01-lbf-2/universal-images/youtube.png" alt="YouTube" />
+              </a>
+              <a href="https://x.com/" target="_blank">
+                <img src="/sp2025-cp01-lbf-2/universal-images/twitter.png" alt="Twitter" />
+              </a>
+              <a href="https://mk.linkedin.com/" target="_blank">
+                <img src="/sp2025-cp01-lbf-2/universal-images/linkedin.png" alt="LinkedIn" />
+              </a>
             </div>
-            <div class="footer-right"
-                style="width: 60%; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d669.955721782301!2d21.43635443830837!3d41.99479860939895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415d7e750ce67%3A0xb97437a01ddaed71!2sTeteks%203%20-%20Holiday%20Inn!5e1!3m2!1sen!2smk!4v1748895858723!5m2!1sen!2smk"
-                    width="100%" height="250"
-                    style="border:0; border-radius: 8px; min-width: 300px; min-height: 500px; max-width: 700px;"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p class="address-text" style="margin-top: 8px; font-size: 30px;"></p>
-            </div>
+          </div>
         </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="../programs/index.html"> Програми</a></li>
+            <li><a href="../services/index.html"> Услуги</a></li>
+            <li><a href="../methodologies/index.html"> Методологии</a></li>
+            <li><a href="../about-us/index.html"> За нас</a></li>
+            <li><a href="../contact/index.html"> Контакт</a></li>
+          </ul>
+        </div>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.0905888501734!2d21.42481047561023!3d41.998331357878534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354144cae363653%3A0x56a4e0712f335296!2sBlvd.%20Partizanski%20Odredi%206%2C%20Skopje%201000!5e0!3m2!1sen!2smk!4v1750275865320!5m2!1sen!2smk"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <button id="openContactModal">Контакт</button>
+        <p>&copy; 2025 LittleBig Founders</p>
+      </div>
     </footer>
-</div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeContactModal">&times;</span>
+        <h3>Контакт</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Име" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Програма / Услуга (опционално)" />
+          <textarea rows="4" placeholder="Вашата порака" required></textarea>
+          <button type="submit">Испрати</button>
+        </form>
+      </div>
+    </div>
+    
+    <button id="scrollToTopBtn" title="Оди најгоре">⬆</button>
 
 <script src="app.js"></script>
 <script src="db.js"></script>
