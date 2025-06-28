@@ -6,16 +6,16 @@
   });
 
 ///////////////SUBMIT BUTTON MESSAGE/////////////////
-const form = document.getElementById('contactForm');
-const tnx = document.getElementById('tnxMsg');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-    form.style.display = 'none';
-    tnx.style.display = 'block';
-    setTimeout(() => {
-      tnx.classList.add('show');
-    }, 10);
-});
+// const form = document.getElementById('contactForm');
+// const tnx = document.getElementById('tnxMsg');
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//     form.style.display = 'none';
+//     tnx.style.display = 'block';
+//     setTimeout(() => {
+//       tnx.classList.add('show');
+//     }, 10);
+// });
 //////////////////////////////////////////////////////
 
    // ===== Contact modal =====
