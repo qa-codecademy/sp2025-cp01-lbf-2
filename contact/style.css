@@ -13,8 +13,8 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 20px;
-  height: 190px;
-  background-image: url('./images-contact/wave.png');
+  height: 170px;
+  background-image: url("./images-contact/wave.png");
   background-size: cover;
   background-position: center;
   color: white;
