@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LBF-PROJECT</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="navbar">
-        <a href="../home-page/index.html">
-            <img src="./images-contact/logo.png" alt="Logo" class="logo" />
-        </a>
-        <div class="nav-toggle" id="nav-toggle">&#9776;</div>
-        
-        <nav class="nav-links" id="nav-links">
-            <div class="dropdown">
-                <a class="dropbtn" href="../programs/index.html" style="text-decoration: none;">
-                    Програми &#9662;
-                </a>
-                <div class="dropdown-content">
-                    <a href="../programs-details-page/mini-startapdzii.html">Мини Стартапџии</a>
-                    <a href="../programs-details-page/idni-osnovaci.html">Идни основачи</a>
-                    <a href="../programs-details-page/mali-kreatori.html">Мали креатори</a>
-                </div>
-            </div>
-            <a class="dropbtn"  href="../lecturers/index.html">Предавачи</a>
-            <a href="../services/index.html">Услуги</a>
-            <a class="dropbtn"  href="../methodologies/index.html">Методологии</a>
-            <a class="dropbtn"  href="../about-us/index.html">За нас</a>
-            <a class="dropbtn"  href="../contact/index.html">Контакт</a>
-        </nav>
-        <input type="text" placeholder="🔍 Пребарај..." class="search" />
+      <a href="../home-page/index.html">
+        <img src="./images-contact/logo.png" alt="Logo" class="logo" />
+      </a>
+      <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+
+      <nav class="nav-links" id="nav-links">
+        <div class="dropdown">
+          <a
+            class="dropbtn"
+            href="../programs/index.html"
+            style="text-decoration: none"
+          >
+            Програми &#9662;
+          </a>
+          <div class="dropdown-content">
+            <a href="../programs-details-page/mini-startapdzii.html"
+              >Мини Стартапџии</a
+            >
+            <a href="../programs-details-page/idni-osnovaci.html"
+              >Идни основачи</a
+            >
+            <a href="../programs-details-page/mali-kreatori.html"
+              >Мали креатори</a
+            >
+          </div>
+        </div>
+        <a class="dropbtn" href="../lecturers/index.html">Предавачи</a>
+        <a href="../services/index.html">Услуги</a>
+        <a class="dropbtn" href="../methodologies/index.html">Методологии</a>
+        <a class="dropbtn" href="../about-us/index.html">За нас</a>
+        <a class="dropbtn" href="../contact/index.html">Контакт</a>
+      </nav>
+      <input type="text" placeholder="🔍 Пребарај..." class="search" />
     </div>
 
-<!------------------CONTACT FORM--------------------------->
+    <!------------------CONTACT FORM--------------------------->
 
     <!-- <div id="contact">
         <form id="contactForm">
@@ -48,57 +58,70 @@
         <div id="tnxMsg" style="display:none;">Ви благодариме за пораката!</div>
     </div> -->
 
+    <!-- Contact form -->
 
+    <section class="contact-section">
+      <h2>Контактирајте нè!</h2>
+      <p class="contact-subtext">
+        Доколку имате прашања или сакате да дознаете повеќе за нашите програми и
+        услуги, слободно испратете ни порака.
+      </p>
 
-<!-- Contact form -->
+      <div class="contact-content">
+        <div class="contact-form-block">
+          <form class="main-contact-form">
+            <input type="text" placeholder=" Твоето име" required />
+            <input type="email" placeholder="📧 Email адреса" required />
+            <textarea
+              rows="4"
+              placeholder="✍️ Порака до нас..."
+              required
+            ></textarea>
+            <button type="submit">📨 Испрати</button>
+          </form>
+        </div>
 
-<section class="contact-section">
-  <h2>Контактирајте нè!</h2>
-  <p class="contact-subtext">Доколку имате прашања или сакате да дознаете повеќе за нашите програми и услуги, слободно испратете ни порака.</p>
-  
-  <div class="contact-content">
-    <div class="contact-form-block">
-      <form class="main-contact-form">
-        <input type="text" placeholder=" Твоето име" required />
-        <input type="email" placeholder="📧 Email адреса" required />
-        <textarea rows="4" placeholder="✍️ Порака до нас..." required></textarea>
-        <button type="submit">📨 Испрати</button>
-      </form>
-    </div>
+        <div class="contact-illustration">
+          <img
+            src="images-contact/peekingKid-Photoroom.png"
+            alt="Деца кои испраќаат порака"
+          />
+        </div>
+      </div>
+    </section>
 
-    <div class="contact-illustration">
-      <img src="images-contact/peekingKid-Photoroom.png" alt="Деца кои испраќаат порака" />
-    </div>
-  </div>
-</section>
+    <section class="contact-options">
+      <div class="contact-logo-wrapper">
+        <img src="images-contact/logo.png" alt="Лого на LittleBig Founders" />
+      </div>
+      <div class="options-container">
+        <div class="option">
+          <img src="images-contact/phone.png" alt="Телефон" />
+          <h3>Телефон</h3>
+          <p>📞 +389 (0)70 800 651</p>
+        </div>
 
-<section class="contact-options">
-  <h2>LittleBig Founders</h2>
-  <div class="options-container">
-    <div class="option">
-      <img src="images-contact/phone.png" alt="Телефон" />
-      <h3>Телефон</h3>
-      <p>📞 +389 (0)70 800 651</p>
-    </div>
-    <div class="option">
-      <img src="images-contact/email.jpg" alt="Email" />
-      <h3>Е-пошта</h3>
-      <p>📧 littlebigfounders@gmail.com</p>
-    </div>
-    <div class="option">
-      <img src="images-contact/address.png" alt="Адреса" />
-      <h3>Посетете нè тука</h3>
-      <p>Бул. Партизански Одреди 6/1 Скопје, Македонија</p>
-    </div>
-  </div>
-</section>
+        <div class="option">
+          <img src="images-contact/email.jpg" alt="Е-пошта" />
+          <h3>Е-пошта</h3>
+          <p>📧 littlebigfounders@gmail.com</p>
+        </div>
 
+        <div class="option">
+          <img src="images-contact/address.png" alt="Адреса" />
+          <h3>Посетете нè тука</h3>
+          <p>
+            📍 Бул. Партизански Одреди 6/1 <br />
+            Скопје, Македонија
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!------------------FOOTER--------------------------->
 
-<!------------------FOOTER--------------------------->
-
-<footer class="footer">
-    <div class="footer-content">
+    <footer class="footer">
+      <div class="footer-content">
         <div class="footer-info">
           <img src="images-contact/logo.png" alt="Лого" class="footer-logo" />
           <p>📞 +389(0)70800651</p>
@@ -167,7 +190,6 @@
       </div>
     </div>
 
-</div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
