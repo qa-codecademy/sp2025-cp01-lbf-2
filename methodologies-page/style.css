@@ -12,7 +12,7 @@ h1 {
   margin-top: -25px;
 }
 
-/* Navbar css*/
+
 .navbar {
   display: flex;
   align-items: center;
@@ -179,14 +179,15 @@ h1 {
 .cards-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
   padding: 40px;
-  gap: 80px; /* adjusted for nice spacing */
+  gap: 40px; 
+  overflow-x: auto;
 }
 
 .card {
-  width: 330px; /* bigger width */
-  height: 380px; /* bigger height */
+  width: 330px; 
+  height: 380px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -297,7 +298,7 @@ h1 {
 }
 
 .logo {
-  height: 140px;
+  height: 160px;
 }
 
 .nav-links {
@@ -335,6 +336,7 @@ h1 {
   background-color: #fff3dd;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin: 10px 5px 5px 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -344,7 +346,8 @@ h1 {
 .dropdown-content a {
   display: block;
   padding: 10px;
-  color: #333;
+  margin: 5px 5px 25px; 
+  color: orange;
   text-decoration: none;
 }
 
@@ -429,7 +432,7 @@ h1 {
   position: relative;
   overflow: hidden;
   transition: max-height 0.5s ease, padding-bottom 0.3s ease;
-  max-height: 180px; /* default collapsed height */
+  max-height: 180px; 
 }
 
 
