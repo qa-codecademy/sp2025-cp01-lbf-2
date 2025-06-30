@@ -432,7 +432,7 @@ body {
   font-weight: bold;
   transition: background 0.3s ease, transform 0.3s ease;
   display: inline-block;
-  margin-top: 20px;
+  
 }
 
 .program-btn:hover {
@@ -450,9 +450,10 @@ body {
 
 .clubs-list {
   list-style-type: disc;
-  padding-left: 30px;
+  padding-left: 20px;
   font-size: 18px;
   line-height: 1.6;
+  padding-bottom: 30px;
 }
 
 .clubs-list li strong {
@@ -470,7 +471,9 @@ body {
   .program-image {
     max-width: 100%;
     flex: unset;
+    margin-top: 150px;
   }
+
 }
 .footer {
   background-color: #e6d3c7;
