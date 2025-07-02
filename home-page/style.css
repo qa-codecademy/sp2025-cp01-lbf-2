@@ -510,9 +510,7 @@ body {
   .program-image {
     max-width: 100%;
     flex: unset;
-    margin-top: 150px;
   }
-
 }
 .footer {
   background-color: #e6d3c7;
