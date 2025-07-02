@@ -40,6 +40,12 @@ modals.forEach(modal => {
     }
   });
 });
+
+function toggleForm() {
+    const form = document.getElementById("signupForm");
+    form.style.display = form.style.display === "flex" ? "none" : "flex";
+}
+
    // ===== Contact modal =====
 const contactBtn = document.getElementById("openContactModal");
 const contactModal = document.getElementById("contactModal");

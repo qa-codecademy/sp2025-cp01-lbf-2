@@ -130,27 +130,49 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
+    background: #f69d62;
     padding: 10px 0;
+    margin-top: 10px;
+    align-items: center;
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .nav-toggle {
-    display: block;
+  .navbar.active {
+    margin-bottom: 40rem;
   }
-
-  
 
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
+  .navbar {
+    background-position: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 100px;
+    width: auto;
+    margin: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 28px;
+    margin-left: auto;
+  }
+
   .search {
     width: 100%;
+    margin: 10px 0;
     border: 2.5px solid rgb(212, 134, 55);
   }
 }
@@ -389,6 +411,20 @@ body {
   cursor: pointer;
   color: #f28b47;
 }
+.linkedin-btn {
+  display: inline-block;
+  background-color: #0077b5;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #005f91;
+}
 .guests-section {
   background-color: #fffaf0;
   padding: 50px 20px;
@@ -480,6 +516,68 @@ body {
 .guest-card strong {
   color: #c56b32;
   font-size: 16px;
+}
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fffaf4;
+  border-top: 4px solid #f4a261;
+}
+
+.cta-title {
+  font-size: 24px;
+  color: #e76f51;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.signup-btn {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #e76f51;
+}
+
+.signup-form {
+  margin-top: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form input,
+.signup-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.signup-form button[type="submit"] {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-form button[type="submit"]:hover {
+  background-color: #e76f51;
 }
 @media (max-width: 900px) {
   .guests-grid {
