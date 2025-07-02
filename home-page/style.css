@@ -465,7 +465,7 @@ body {
 
 .clubs-list {
   list-style-type: disc;
-  padding-left: 100px;
+  padding-left: 70px;
   font-size: 18px;
   line-height: 1.6;
   padding-bottom: 30px;
@@ -512,6 +512,21 @@ body {
     flex: unset;
   }
 }
+
+@media (max-width: 700px) {
+  .clubs-list {
+    padding-left: 40px; 
+    font-size: 16px;    
+  }
+}
+
+@media (max-width: 400px) {
+  .clubs-list {
+    padding-left: 20px; 
+    font-size: 14px;    
+  }
+}
+
 .footer {
   background-color: #e6d3c7;
   color: rgb(50, 19, 19);
