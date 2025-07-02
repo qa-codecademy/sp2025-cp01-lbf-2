@@ -406,6 +406,13 @@ body {
   max-width: 450px;
 }
 
+.program-content h2,
+.program-content p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+}
+
 .program-content p {
   font-size: 18px;
   color: #444;
@@ -416,17 +423,19 @@ body {
   margin-right: auto;
 }
 .program-image {
-  flex: 1 1 300px;
-  max-width: 400px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   display: block;        
+  margin: 0 auto;        
+  max-width: 400px;     
+  width: 100%;           
+  height: auto;         
+  border-radius: 15px;   
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .program-btn {
   background-color: #f28b47;
   color: white;
-  padding: 12px 30px;
+  padding: 15px 30px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
@@ -439,6 +448,12 @@ body {
   background-color: #db7b6b;
   transform: scale(1.05);
 }
+.program-button-wrapper {
+  width: 100%;
+  text-align: center; 
+  margin-top: 20px;   
+}
+
 
 .clubs-section h2 {
   font-family: "Balthazar", serif;
@@ -450,7 +465,7 @@ body {
 
 .clubs-list {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 100px;
   font-size: 18px;
   line-height: 1.6;
   padding-bottom: 30px;
@@ -461,13 +476,37 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .program-section {
+    max-width: 90%;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 700px) {
   .program-section {
     flex-direction: column;
-    max-width: 95%;
+    gap: 30px;
+    padding: 20px 15px;
   }
 
-  .program-content,
+  .program-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .program-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .program-section {
+    padding: 15px 10px;
+  }
+
   .program-image {
     max-width: 100%;
     flex: unset;
