@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   padding: 30px 0;
   color: #333;
@@ -176,6 +176,7 @@ h1 {
 }
 
 
+
 .cards-container {
   display: flex;
   justify-content: center;
@@ -312,12 +313,12 @@ h1 {
   font-size: 24px;
   cursor: pointer;
 }
-
+/* 
 .search {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-}
+} */
 
 .dropdown {
   position: relative;
@@ -674,5 +675,5 @@ h1 {
 }
 
 .title{
-  color: orange
+ color: #e29547;
 }
